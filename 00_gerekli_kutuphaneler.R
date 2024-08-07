@@ -60,7 +60,7 @@ BiocManager::install(version = "3.19", ask = FALSE)
 
 bioconductor_packages <- c("maftools", "BSgenome.Hsapiens.UCSC.hg19", "edgeR", 
                            "clusterProfiler", "org.Hs.eg.db", "MultiAssayExperiment", 
-                           "ComplexHeatmap", "ELMER")
+                           "ComplexHeatmap", "ELMER", "sesame", "sesameData)
 
 print("Bioconductor paketleri indiriliyor...")
 
