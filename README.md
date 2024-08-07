@@ -1,7 +1,5 @@
-# Bilimler Köyü
-
-## ATGC Sanatı
-### Genetik data analizi ve görselleştirme
+# Bilimler Köyü 12-18 Ağustos 2024
+## **ATGC Sanatı**: Genetik data analizi ve görselleştirme
 
 Bu kılavuz, kurs sırasında yaşanabilecek sorunları engellemek adına bir ön hazırlık sürecini tarif eder. Köyde, internete erişimin kısıtlı olması nedeniyle bu basamakları kursa gelmeden tamamlamış olmanız kurs süresince sorunsuz ilerleyebilmemiz için gereklidir.
 
