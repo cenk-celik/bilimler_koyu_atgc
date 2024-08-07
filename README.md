@@ -23,7 +23,7 @@ Aşağıdaki gibi bir arayüz açılacaktır. Bu arayüz üzerinden yüklenmesi 
 2. “>” imlecinin olduğu satıra aşağıdaki aşağıdaki bağlantıdan sağ tıklayıp indirdiğiniz dosyayı sürükleyin ve enter’a basın:
 - [00_gerekli_kutuphaneler.R](https://raw.githubusercontent.com/cenk-celik/bilimler_koyu_atgc/main/00_gerekli_kutuphaneler.R)
 
-![Kütüphane yükleme betiği](./kutuphane_yukleme.png)
+![Kütüphane yükleme betiği](./kutuphane_kurulumu.png)
 
 ##### Gerekli Verinin İndirilmesi
 Kurs boyunca erişime açık, oldukça kapsamlı bir meme kanseri veri seti kullanacağız. Veri seti oldukça büyük olduğundan kurs öncesinde indirmeniz önerilir.
