@@ -16,5 +16,17 @@ curl_download("https://cbioportal-datahub.s3.amazonaws.com/brca_tcga_pan_can_atl
 print(paste0("Veriler indirildi... Dosya aciliyor!"))
 untar("ham_veri/brca_tcga_pan_can_atlas_2018.tar.gz")
 
+print("Metilasyon verisine erisiliyor...")
+library(TCGAbiolinks)
+metilasyon <- GDCquery(project = "TCGA-BRCA", 
+                       data.category = "DNA Methylation", 
+                       platform = "Illumina Human Methylation 27", 
+                       data.type = "DNA Methylation")
+
+print("Metilasyon verisi indiriliyor...")
+GDCdownload(metilasyon)
+metilasyon_verisi <- GDCprepare(query = metilasyon, summarizedExperiment = TRUE)
+save(metilasyon_verisi, file = "ham_veri/metilasyon.RData")
+
 print("Butun gerekli islemler tamamlandi! Kursta gorusmek uzere!")
 print("Cenk")
