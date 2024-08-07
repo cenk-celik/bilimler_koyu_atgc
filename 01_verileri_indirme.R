@@ -26,7 +26,9 @@ metilasyon <- GDCquery(project = "TCGA-BRCA",
 print("Metilasyon verisi indiriliyor...")
 GDCdownload(metilasyon)
 metilasyon_verisi <- GDCprepare(query = metilasyon, summarizedExperiment = TRUE)
+print("Metilasyon verisi kaydediliyor...")
 save(metilasyon_verisi, file = "ham_veri/metilasyon.RData")
+print("Metilasyon verisi kaydedildi!")
 
 print("Butun gerekli islemler tamamlandi! Kursta gorusmek uzere!")
 print("Cenk")
