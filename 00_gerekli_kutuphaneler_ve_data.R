@@ -45,7 +45,7 @@ print("CRAN paketleri indiriliyor...")
 # Install CRAN packages
 cran_packages <- c("tidyverse", "ggpubr", "ggrepel", "RColorBrewer", "NMF", 
                    "pheatmap", "DGEobj.utils", "hdf5r", "survminer", "caret", 
-                   "glmnet", "devtools", "Seurat")
+                   "glmnet", "devtools", "Seurat", "curl")
 
 for (pkg in cran_packages) {
   safe_install(pkg)
