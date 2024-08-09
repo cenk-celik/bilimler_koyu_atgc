@@ -31,7 +31,7 @@ safe_install <- function(pkg) {
 safe_bioconductor_install <- function(pkg) {
   tryCatch(
     {
-      BiocManager::install(pkg, ask = FALSE)
+      BiocManager::install(pkg, repos = "https://cran.r-project.org", ask = FALSE)
     },
     error = function(e) {
       send_error_email(e$message)
