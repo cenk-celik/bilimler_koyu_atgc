@@ -21,7 +21,7 @@ library(TCGAbiolinks)
 metilasyon <- GDCquery(project = "TCGA-BRCA", 
                        data.category = "DNA Methylation", 
                        platform = "Illumina Human Methylation 27", 
-                       data.type = "DNA Methylation")
+                       data.type = "Methylation Beta Value")
 
 print("Metilasyon verisi indiriliyor...")
 GDCdownload(metilasyon)
