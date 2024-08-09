@@ -1,3 +1,5 @@
+options(repos = c(CRAN = "https://cran.r-project.org"))
+
 # Install the sendmailR package
 if (!require("sendmailR", quietly = TRUE))
   install.packages("sendmailR")
@@ -18,7 +20,7 @@ send_error_email <- function(error_message) {
 safe_install <- function(pkg) {
   tryCatch(
     {
-      install.packages(pkg, repos = "https://cran.r-project.org", ask = FALSE)
+      install.packages(pkg, ask = FALSE)
     },
     error = function(e) {
       send_error_email(e$message)
@@ -31,7 +33,7 @@ safe_install <- function(pkg) {
 safe_bioconductor_install <- function(pkg) {
   tryCatch(
     {
-      BiocManager::install(pkg, repos = "https://cran.r-project.org", ask = FALSE)
+      BiocManager::install(pkg, ask = FALSE)
     },
     error = function(e) {
       send_error_email(e$message)
