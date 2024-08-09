@@ -18,7 +18,7 @@ send_error_email <- function(error_message) {
 safe_install <- function(pkg) {
   tryCatch(
     {
-      install.packages(pkg, ask = FALSE)
+      install.packages(pkg, repos = "https://cran.r-project.org", ask = FALSE)
     },
     error = function(e) {
       send_error_email(e$message)
